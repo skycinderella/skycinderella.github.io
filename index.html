@@ -1,51 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>KAGIMU SKY CINDERELLA - Portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 	<style>
-		body { font-family: Arial, sans-serif; max-width: 700px; margin: auto; padding: 20px; line-height: 1.6; }
-		img { width: 200px; height: 200px; object-fit: cover; border-radius: 50%; }
-		h2 { border-bottom: 2px solid #ccc; padding-bottom: 4px; }
+		:root {
+			--indigo: #2d1b69;
+			--magenta: #d6336c;
+			--teal: #0e9f9a;
+			--gold: #f2a900;
+			--lavender: #f4f0ff;
+			--ink: #1e1a33;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			font-family: "Nunito", Arial, sans-serif;
+			color: var(--ink);
+			background: var(--lavender);
+			line-height: 1.7;
+		}
+		h1, h2 { font-family: "Outfit", Arial, sans-serif; margin: 0; }
+
+		header {
+			background: linear-gradient(135deg, var(--indigo), var(--magenta));
+			color: #fff;
+			text-align: center;
+			padding: 40px 20px 48px;
+		}
+		header img {
+			width: 190px;
+			height: 190px;
+			object-fit: cover;
+			border-radius: 50%;
+			border: 6px solid var(--gold);
+			margin-bottom: 16px;
+		}
+		header h1 { font-size: 2rem; line-height: 1.2; }
+		header p { margin: 8px auto 0; max-width: 480px; }
+
+		main { max-width: 720px; margin: auto; padding: 24px 16px 40px; }
+		section {
+			background: #fff;
+			border-radius: 12px;
+			border-left: 8px solid var(--magenta);
+			padding: 18px 20px;
+			margin-bottom: 20px;
+		}
+		section:nth-child(2) { border-color: var(--teal); }
+		section:nth-child(3) { border-color: var(--gold); }
+		section:nth-child(4) { border-color: var(--indigo); }
+		section:nth-child(5) { border-color: var(--magenta); }
+		section:nth-child(6) { border-color: var(--teal); }
+
+		h2 { color: var(--indigo); font-size: 1.4rem; margin-bottom: 10px; }
+		ul { padding-left: 20px; margin: 0; }
+		li { margin-bottom: 6px; }
+
+		.skills { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+		.skills li {
+			background: var(--teal);
+			color: #fff;
+			font-weight: 600;
+			padding: 6px 14px;
+			border-radius: 999px;
+			margin: 0;
+		}
+		.skills li:nth-child(even) { background: var(--magenta); }
+
+		a { color: var(--magenta); font-weight: 600; }
+		a:hover, a:focus { color: var(--indigo); }
+
+		footer { text-align: center; padding: 20px; background: var(--indigo); color: #fff; }
 	</style>
 </head>
 <body>
-	<h1>KAGIMU SKY CINDERELLA</h1>
-	<p>Computer Science, Year 1, Uganda Christian University, Mukono, Uganda.</p>  
-	<img src="photo.jpg" alt="My Photo">
+	<header>
+		<img src="me.jpg" alt="Photo of Kagimu Sky Cinderella">
+		<h1>KAGIMU SKY CINDERELLA</h1>
+		<p>Computer Science, Year 1, Uganda Christian University, Mukono, Uganda.</p>
+	</header>
 
-	<h2>About Me</h2>
-	<p>I am a first-year Computer Science student at Uganda Christian University in Mukono, Uganda. I am curious about how computers and software work, and I am building my foundation in computing one unit at a time. Outside class, I enjoy listening to music, and recharging so I can stay focused on my studies.</p>
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<p>I am a first-year Computer Science student at Uganda Christian University in Mukono, Uganda. I am curious about how computers and software work, and I am building my foundation in computing one unit at a time. Outside class, I enjoy listening to music and recharging so I can stay focused on my studies.</p>
+		</section>
 
-	<h2>Skills</h2>
-	<ul>
-		<li>Data Enumeration and Analysis</li>
-		<li>Basic hardware concepts</li>
-		<li>Microsoft Office Suite: Word, Excel, PowerPoint</li>
-		<li>IDEs and Tools: VS Code, Code::Blocks</li>
-		<li>Version Control: Git and GitHub</li>
-	</ul>
+		<section>
+			<h2>Skills</h2>
+			<ul class="skills">
+				<li>Data Enumeration and Analysis</li>
+				<li>Basic hardware concepts</li>
+				<li>Microsoft Word</li>
+				<li>Microsoft Excel</li>
+				<li>Microsoft PowerPoint</li>
+				<li>VS Code</li>
+				<li>Code::Blocks</li>
+				<li>Git and GitHub</li>
+			</ul>
+		</section>
 
-	<h2>Goals</h2>
-	<ul>
-		<li>Pass all my first-year units with strong grades.</li>
-		<li>Learn the basic of Programming and Networking.</li>
-		<li>Earn an entry-level cybersecurity certificate.</li>
-	</ul>
+		<section>
+			<h2>Goals</h2>
+			<ul>
+				<li>Pass all my first-year units with strong grades.</li>
+				<li>Learn the basics of Programming and Networking.</li>
+				<li>Earn an entry-level cybersecurity certificate.</li>
+			</ul>
+		</section>
 
-	<h2>Aspirations</h2>
-	<p>I aspire to become a cybersecurity officer who protects organizations and ordinary people from online threats. I want to help keep data safe as more of our lives move online and inspire younger girls all over the world to pursue technology related education.</p>
+		<section>
+			<h2>Aspirations</h2>
+			<p>I aspire to become a cybersecurity officer who protects organizations and ordinary people from online threats. I want to help keep data safe as more of our lives move online, and inspire younger girls all over the world to pursue technology-related education.</p>
+		</section>
 
-	<h2>Achievements</h2>
-	<ul>
-		<li>Uganda Advanced Certificate of Education (2025) - St. Julian High School, Gayaza.</li>
-		<li>Uganda Certificate of Education (2023) - Uganda Martyrs Secondary School, Namugongo.</li>
-		<li>Primary Leaving Examinations (2018) -  Winston Day and Boarding Primary School, Kawempe.</li>
-	</ul>
-	
-	<h2>Contact</h2>
-	<p>Phone: +256759947416</p>
-	<p>Email: skycinderella22@gmail.com</p>
-	<p>GitHub: https://github.com/skycinderella</p>
+		<section>
+			<h2>Achievements</h2>
+			<ul>
+				<li>Uganda Advanced Certificate of Education (2025) - St. Julian High School, Gayaza.</li>
+				<li>Uganda Certificate of Education (2023) - Uganda Martyrs Secondary School, Namugongo.</li>
+				<li>Primary Leaving Examinations (2018) - Winston Day and Boarding Primary School, Kawempe.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Contact</h2>
+			<p>Phone: <a href="tel:+256759947416">+256759947416</a></p>
+			<p>Email: <a href="mailto:skycinderella22@gmail.com">skycinderella22@gmail.com</a></p>
+			<p>GitHub: <a href="https://github.com/skycinderella" target="_blank" rel="noopener">github.com/skycinderella</a></p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Kagimu Sky Cinderella</p>
+	</footer>
 </body>
-</html>  
+</html>
